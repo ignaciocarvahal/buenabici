@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <style type="text/css">
+        .jumbotron {
+            margin: 30px;
+        }
+        <style>
+        .celeste{background-color:pink;}
+    </style>
+    <title> ¿Se te antoja algo?</title>  
+</head>
+<body>
+    {% include 'app_de_IN3501/menu.html' %}
+    <div class="container">
+        <div id="titulo">
+            <h1>¿Se te antoja algo?</h1>
+            </style>
+  <style>
+body{ 
+  background-color: lightblue
+};
+
+
+h2 {
+    color: black;
+    text-align: center;
+}
+h1 {
+    color: white ;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+</style>
+</head> 
+    <div class="row celeste">
+            <div class="row">
+            <p>Haz tu pedido y deposita el monto total a la cuenta x del emprendimiento y manda el comprobante al mail vanessagonzalesorostegui@gmail.com , una vez hecho esto ¡enviaremos tu encargo!</p>
+        </div>
+    </div>
+
+
+
+        </div>
+<!--       Esto es un comentario      -->
+        <form method="GET" action="/confirmacionpedido"> {% csrf_token %}
+            <input type="text" placeholder="Ingresa tu nombre" id="nombre_name" name="nombre_name">
+            <input type="textArea" placeholder="Ingresa tu edad" id="duda" name="duda">
+
+            <input type="textArea" placeholder="Direccion" id="signo" name="signo">
+            <input type="textArea" placeholder="codigo postal" id="duda2" name="duda2">
+            
+
+            <div class="form-group">
+                <label for="email">Ingrese su e-mail</label>
+                <input type="email" class="form-control" id="email" name="email">
+            </div>
+
+            <select class="form-control" id="seccion" name="seccion">
+                <option value=""></option>
+                <option value="Hombre">Hombre</option>
+                <option value="Mujer">Mujer</option>
+            </select>
+            <div class="form-group">
+                <label for="Pedido">Pedido</label>
+                <input type="textArea" class="form-control" placeholder="Haz tu pedido" id="pedido" name="pedido" row="3">
+            </div>
+
+            <input type="submit">
+
+        </form>
+    </div>
+</body>
+</html>

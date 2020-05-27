@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+
+    <title>Inicio</title>
+    <style type="text/css">
+        .jumbotron {
+            margin: 30px;
+        }
+    </style>
+    <style>
+body{ 
+    background-color: white
+};
+
+
+h2 {
+    color: black;
+    text-align: center;
+}
+h1 {
+    color: white ;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div id="titulo">
+            <h1>¡Bienvenido a Dulcismassa!</h1>
+<style>
+        .celeste{background-color:lightblue;}
+    </style>
+  <title>Inicio</title>
+</head>
+<body>
+    <div id="descripcion" class="container">
+        {% include 'app_de_IN3501/menu.html' %}
+        <h1>Noticias</h1>
+        <div class="row celeste">
+            <div class="col">
+            <p>Viernes, Sabado y Domingo, realizamos entregas en metro los Heroes, Santa Ana, Zapadores y Vespucio Norte.</p>
+
+          
+                <p><img src="{%static "foto6.jpg" %}" width="400" height="550"> </p>
+            </div>
+        </div>
+        <div class="col">
+             <p>Nuestras ofertas:</p>
+            <p><img src="{%static "foto5.jpg" %}" width="400" height="550"></p>
+        </div>
+        <div class="row celeste">
+            <p>🍭Puedes pedirnos productos personalizados
+<br>🍭Entrega en 🚆 línea 2
+<br>🍭Pedidos con 2 días de anticipación
+<br>🍭Dulces para regalos</p>
+
+        </div>
+    </div>
+</body>
+</html>
